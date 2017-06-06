@@ -1,0 +1,18 @@
+<h1>This is the home page</h1>
+
+<%= link_to "About", about_path %>
+
+<br><br>
+Step 14: To upload an image to your app that you want to reference in your code,
+go to app/assets/images and right click on images, then select the upload files to images option.
+Select the image you want to upload. Once uploaded check the images folder and note the name of your file
+(for example profileimage.png). Then to show this image in your HTML page and to link it to another page, 
+put in the following code (this is if the file you're referencing is profileimage.png) ->
+<br><br>
+
+<%= link_to image_tag('profileimage.png'), 'www.mashrurhossain.com' %>
+<br><br>
+The image tag is for the image, and the link_to turns the image to a link and then you provide the link you want it to go to after the comma
+If you simply want to display an image without a link, put in the following code ->
+<br><br>
+<%= image_tag 'profileimage.png' %>
